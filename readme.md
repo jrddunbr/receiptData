@@ -4,6 +4,13 @@ Software for tracking (my food) purchases
 
 ## Usage
 
+Create a `stores.txt` file (it can be empty), and a folder called `./receipts`
+
+```bash
+touch stores.txt
+mkdir receipts
+```
+
 ```bash
 python3 main.py
 ```
@@ -11,8 +18,6 @@ python3 main.py
 Follow the following prompts.
 
 It will try to save in `./receipts`
-
-
 
 ## Configuration Files
 
@@ -24,6 +29,6 @@ Store names are separated by newlines. Lines with only whitespace on them are om
 
 ## TODO
 
-* have the program make `./receipts` folder when saving first receipt
-* make not crash when no file exists
-* make this file enter stores as you enter new ones into the program
+* have the program create the `./receipts` folder when saving the first receipt
+* make not crash when the `stores.txt` file does not exist
+* make program enter new stores into the `stores.txt` file that it has not seen before
